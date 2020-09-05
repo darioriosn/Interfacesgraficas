@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplojframe;
+package ejemplojframe3;
 
 /**
  *
  * @author Dario
  */
-public class EjemploJframe {
+public class EjemploJframe3 {
 
     /**
      * @param args the command line arguments
@@ -17,7 +17,7 @@ public class EjemploJframe {
     public static void main(String[] args) {
         // TODO code application logic here
         Ventana v = new Ventana();
-        
+        v.iniciar();
     }
     
 }

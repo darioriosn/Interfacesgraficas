@@ -5,6 +5,7 @@
  */
 package ejemplojframe;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
@@ -13,20 +14,17 @@ import javax.swing.border.BevelBorder;
 
 /**
  *
- * @author una
+ * @author Dario
  */
 public class BarraEstado extends JPanel {
 
+    private JLabel infoEstado;
+    
     public BarraEstado() {
-        setLayout(new FlowLayout(FlowLayout.LEFT));
+        setLayout(new FlowLayout());
         setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
-        add(infoEstado = new JLabel("(No hay información disponible)"));
+        add(infoEstado = new JLabel("No hay información disponible"));
+        
     }
-
-    public void mostrarMensaje(String mensaje) {
-        infoEstado.setText(mensaje);
-    }
-
-    private final JLabel infoEstado;
+    
 }
-
